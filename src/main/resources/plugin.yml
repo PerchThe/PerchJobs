@@ -1,0 +1,39 @@
+name: PerchJobs
+version: '${version}'
+main: me.perch.Jobs
+api-version: '1.21'
+authors: [KayaLambrex]
+website: https://the-perch.net
+
+softdepend:
+  - PlaceholderAPI
+  - Vault
+
+permissions:
+  perchjobs.admin:
+    description: Allows reloading and debugging.
+    default: op
+  perchjobs.admin.setlevel:
+    description: Allows setting job levels.
+    default: op
+  perchjobs.join:
+    description: Allows a player to join jobs.
+    default: true
+  perchjobs.join.*:
+    description: Allows joining ALL specific jobs (if per-job perms are used).
+    default: true
+  perchjobs.leave:
+    description: Allows a player to leave jobs.
+    default: true
+  perchjobs.info:
+    description: Allows checking job status.
+    default: true
+
+commands:
+  jobs:
+    description: Main user command for joining and viewing jobs.
+    usage: /jobs <join|leave|info> [job]
+    aliases: [job, j]
+  perchjobs:
+    description: Main plugin command.
+    usage: /perchjobs <reload|debug|setlevel|join|leave|info>

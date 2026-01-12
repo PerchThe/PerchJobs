@@ -1,0 +1,36 @@
+display-name: "Builder"
+income-formula: "level * 0.02"
+xp-per-action: 1.0
+xp-req-formula: "600 * level"
+
+max-actions-per-second: 8
+
+blacklist:
+  - WHEAT_SEEDS
+  - BEETROOT_SEEDS
+  - MELON_SEEDS
+  - PUMPKIN_SEEDS
+  - TORCHFLOWER_SEEDS
+  - PITCHER_POD
+  - COCOA_BEANS
+  - NETHER_WART
+  - BROWN_MUSHROOM
+  - RED_MUSHROOM
+  - SWEET_BERRIES
+  - CHORUS_PLANT
+  - CHORUS_FLOWER
+  - POTATO
+  - CARROT
+  - BAMBOO
+  - OAK_SAPLING
+  - SPRUCE_SAPLING
+  - BIRCH_SAPLING
+  - JUNGLE_SAPLING
+  - ACACIA_SAPLING
+  - DARK_OAK_SAPLING
+  - CHERRY_SAPLING
+  - MANGROVE_PROPAGULE
+  - PALE_OAK_SAPLING
+  - GLOW_BERRIES
+  - MELON
+  - PUMPKIN

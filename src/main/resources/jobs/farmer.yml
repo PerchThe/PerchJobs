@@ -1,0 +1,30 @@
+display-name: "Farmer"
+income-formula: "level * 0.020"
+xp-per-action: 1.0
+xp-req-formula: "600 * level"
+
+stack-decay-multiplier: 0.10
+
+max-actions-per-second: 8
+
+tools: []
+
+whitelist:
+  - WHEAT
+  - POTATOES
+  - BEETROOTS
+  - CARROTS
+  - COCOA
+  - NETHER_WART
+  - TORCHFLOWER
+  - PITCHER_PLANT
+  - MELON
+  - PUMPKIN
+  - CACTUS
+  - REEDS
+  - BAMBOO
+  - SWEET_BERRY_BUSH
+  - CAVE_VINES_PLANT
+  - CHORUS_PLANT
+  - BROWN_MUSHROOM
+  - RED_MUSHROOM

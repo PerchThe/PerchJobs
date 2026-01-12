@@ -1,0 +1,6 @@
+max-level: 100
+
+jobs:
+  limit: 2
+
+auto-save-interval: 12000

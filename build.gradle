@@ -1,0 +1,61 @@
+plugins {
+    id 'java'
+    id 'com.gradleup.shadow' version '8.3.5'
+}
+
+group = 'me.perch'
+version = '1.0.0'
+
+repositories {
+    mavenCentral()
+    maven {
+        name = "papermc-repo"
+        url = "https://repo.papermc.io/repository/maven-public/"
+    }
+    maven {
+        url = 'https://repo.extendedclip.com/content/repositories/placeholderapi/'
+    }
+    maven {
+        url = 'https://jitpack.io'
+    }
+}
+
+dependencies {
+    compileOnly 'io.papermc.paper:paper-api:1.21-R0.1-SNAPSHOT'
+    compileOnly 'me.clip:placeholderapi:2.11.6'
+    compileOnly 'com.github.MilkBowl:VaultAPI:1.7'
+
+    implementation 'com.zaxxer:HikariCP:5.1.0'
+    implementation 'org.xerial:sqlite-jdbc:3.46.0.0'
+    implementation 'net.objecthunter:exp4j:0.4.8'
+
+    compileOnly 'org.slf4j:slf4j-api:2.0.9'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.release.set(21)
+}
+
+processResources {
+    def props = [version: version]
+    inputs.properties props
+    filteringCharset 'UTF-8'
+    filesMatching('plugin.yml') {
+        expand props
+    }
+}
+
+shadowJar {
+    relocate 'com.zaxxer.hikari', 'me.perch.libs.hikari'
+    relocate 'net.objecthunter.exp4j', 'me.perch.libs.exp4j'
+    archiveClassifier.set('')
+}
+
+build.dependsOn shadowJar

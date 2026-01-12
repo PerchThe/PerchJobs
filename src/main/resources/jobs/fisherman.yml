@@ -1,0 +1,4 @@
+display-name: "Fisherman"
+income-formula: "level * 0.15"
+xp-per-action: 20.0
+xp-req-formula: "600 * level"

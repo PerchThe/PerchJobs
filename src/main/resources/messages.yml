@@ -1,0 +1,21 @@
+command:
+  no-permission: "&cNo permission."
+  players-only: "&cPlayers only."
+  reload-success: "&aConfiguration reloaded!"
+  unknown-command: "&cUnknown command. Type /jobs for help."
+  usage:
+    - "&#FEC300PerchJobs Help"
+    - " &8• &e/jobs join <job> &8- &fJoin a job"
+    - " &8• &e/jobs leave <job> &8- &f>Leave a job"
+    - " &8• &e/jobs info &8- &fYour stats"
+
+jobs:
+  join-success: ""
+  leave-success: ""
+  already-joined: ""
+  not-joined: ""
+  invalid-job: "&cUnknown job."
+  limit-reached: ""
+
+level-up: "&8» &e&lLEVEL UP! &fYou are now a &eLv. %level% %job%!"
+profile-loading: "&cLoading profile..."

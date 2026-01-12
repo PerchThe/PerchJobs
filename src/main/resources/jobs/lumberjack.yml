@@ -1,0 +1,36 @@
+display-name: "Lumberjack"
+income-formula: "level * 0.050"
+xp-per-action: 3
+xp-req-formula: "600 * level"
+
+max-actions-per-second: 5
+
+tools:
+  - WOODEN_AXE
+  - STONE_AXE
+  - IRON_AXE
+  - GOLDEN_AXE
+  - DIAMOND_AXE
+  - NETHERITE_AXE
+
+whitelist:
+  - OAK_LOG
+  - BIRCH_LOG
+  - SPRUCE_LOG
+  - JUNGLE_LOG
+  - ACACIA_LOG
+  - DARK_OAK_LOG
+  - MANGROVE_LOG
+  - CHERRY_LOG
+  - CRIMSON_STEM
+  - WARPED_STEM
+  - STRIPPED_OAK_LOG
+  - STRIPPED_BIRCH_LOG
+  - STRIPPED_SPRUCE_LOG
+  - STRIPPED_JUNGLE_LOG
+  - STRIPPED_ACACIA_LOG
+  - STRIPPED_DARK_OAK_LOG
+  - STRIPPED_MANGROVE_LOG
+  - STRIPPED_CHERRY_LOG
+  - STRIPPED_CRIMSON_STEM
+  - STRIPPED_WARPED_STEM
