@@ -33,7 +33,7 @@ commands:
   jobs:
     description: Main user command for joining and viewing jobs.
     usage: /jobs <join|leave|info> [job]
-    aliases: [job, j]
+    aliases: [job]
   perchjobs:
     description: Main plugin command.
     usage: /perchjobs <reload|debug|setlevel|join|leave|info>
